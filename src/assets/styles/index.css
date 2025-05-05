@@ -1,0 +1,23 @@
+/* Generals */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdfdfd;
+  }
+  
+:root {
+  --bs-primary: hsl(215, 76%, 35%);
+  --bs-warning: hsl(49, 99%, 50%);
+  --bs-secondary: hsl(49, 99%, 50%);
+}
+
+/* Links */
+.link:hover {
+  color: var(--bs-warning) !important;
+  transition: color 0.3s ease;
+}
