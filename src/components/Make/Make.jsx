@@ -20,8 +20,8 @@ const Make = () => {
         service leadership and making a positive impact.
       </p>
       <div className="make-buttons" data-aos="fade-left" data-aos-delay="200">
-        <button className="make-btn learn" onClick={() => handleClick('/about')}>Learn More</button>
-        <button className="make-btn join" onClick={() => handleClick('/contact')}>Join Us</button>
+        <button className="btn btn-outline-secondary" onClick={() => handleClick('/about')}>Learn More</button>
+        <button className="btn btn-warning" onClick={() => handleClick('/contact')}>Join Us</button>
       </div>
     </section>
   );

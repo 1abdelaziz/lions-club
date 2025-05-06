@@ -5,7 +5,7 @@
   }
   
   .mission-title {
-    color: #1f3c88;
+    color: var(--bs-primary);
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -31,17 +31,16 @@
     border-radius: 12px;
     padding: 30px 20px;
     max-width: 280px;
-    box-shadow: 0 4px 15px rgba(255, 221, 0, 0.4); /* Yellow shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .mission-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(255, 221, 0, 0.6);
+    transform: translateY(-10px);
   }
   
   .mission-icon {
     font-size: 2.5rem;
-    color: #1f3c88;
+    color: var(--bs-primary);
     margin-bottom: 15px;
   }
