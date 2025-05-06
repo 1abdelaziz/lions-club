@@ -1,0 +1,11 @@
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}

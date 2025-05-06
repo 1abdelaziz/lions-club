@@ -1,12 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import '../assets/styles/index.css';
 import Footer from '../components/Footer/Footer.jsx';
-import Header from '../components/Header/Header.jsx';
+import MainHero from '../components/MainHero/MainHero.jsx';
+import Carousel from '../components/Carousel/Carousel.jsx';
 
 export default function Home() {
     return (
         <>
-            <Header />
+            <MainHero />
             <br />
             <br />
             <br />
@@ -15,6 +17,7 @@ export default function Home() {
             <br />
             <br />
             <br />
+
             <Footer />
         </>
     )
