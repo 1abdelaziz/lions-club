@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import './Nav.css';
 
@@ -24,8 +25,8 @@ export default function Nav(props) {
 
                 <div className="collapse navbar-collapse" id="navbarContent">
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <NavLink href="#" text="Accueil" scrolled={props.scrolled} />
-                        <NavLink href="#about" text="À propos" scrolled={props.scrolled} />
+                        <NavLink href="/" text="Accueil" scrolled={props.scrolled} />
+                        <NavLink href="/about" text="À propos" scrolled={props.scrolled} />
                         <NavLink href="#events" text="Événements" scrolled={props.scrolled} />
                         <NavLink href="#contact" text="Contact" scrolled={props.scrolled} />
                     </ul>
@@ -41,9 +42,10 @@ export default function Nav(props) {
 function NavLink(props) {
     return (
         <li className="nav-item mx-2">
-            <a href={props.href} className={`nav-link ${props.scrolled ? 'text-dark' : 'text-white'}`}>
+            <Link to={props.href} className={`nav-link ${props.scrolled ? 'text-dark' : 'text-white'}`}>
                 {props.text}
-            </a>
+            </Link>
         </li>
     );
 }
+

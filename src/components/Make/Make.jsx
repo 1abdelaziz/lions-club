@@ -13,13 +13,13 @@ const Make = () => {
   };
 
   return (
-    <section className="make-section" data-aos="fade-left">
+    <section className="make-section" data-aos="fade-up">
       <h2 className="make-title">Make a Difference Today</h2>
       <p className="make-description">
         Join the Lions FSBM community and be part of a network of students committed to 
         service leadership and making a positive impact.
       </p>
-      <div className="make-buttons" data-aos="fade-left" data-aos-delay="200">
+      <div className="make-buttons" data-aos="fade-up">
         <button className="btn btn-outline-secondary" onClick={() => handleClick('/about')}>Learn More</button>
         <button className="btn btn-warning" onClick={() => handleClick('/contact')}>Join Us</button>
       </div>

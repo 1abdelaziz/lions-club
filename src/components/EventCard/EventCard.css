@@ -10,12 +10,12 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.card-img-top {
+.event-card-container .card-img-top {
     object-fit: cover;
     width: 100%;
 }
 
-.card-body {
+.event-card-container .card-body {
     padding: 1.5rem;
 }
 
@@ -25,14 +25,20 @@
     color: #333;
 }
 
-h4 {
+.event-card-container h4 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
 }
 
-.card-text {
+.event-card-container h3 {
+    color: var(--bs-primary);
+    font-weight: bold;
+}
+
+.event-card-container .card-text {
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
+

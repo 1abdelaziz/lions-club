@@ -9,7 +9,6 @@ import Mission from '../components/Mission/Mission.jsx';
 import UpcomingEvents from '../components/UpcomingEvents/UpcomingEvents.jsx';
 
 
-
 export default function Home() {
     let eventsList = [
         {

@@ -1,9 +1,16 @@
-import {FaClock, FaMapPin, FaCalendar, FaArrowRight, } from 'react-icons/fa';
+import { useEffect } from 'react';
+import { FaClock, FaMapPin, FaCalendar, FaArrowRight } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './EventCard.css';
 
 export default function EventCard(props) {
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: false });
+    }, []);
+
     return (
-        <div className="event-card-container card shadow-sm h-100">
+        <div className="event-card-container card shadow-sm h-100" data-aos="fade-up">
             <img src={props.img.src} alt={props.img.alt} className="card-img-top object-fit-cover" style={{height: "200px"}} />
             <div className="card-body d-flex flex-column">
                 <h3 className="card-title">{props.title}</h3>
@@ -31,3 +38,4 @@ export default function EventCard(props) {
         </div>
     )
 }
+
