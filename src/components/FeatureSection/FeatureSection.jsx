@@ -1,10 +1,16 @@
 import { FaArrowRight } from 'react-icons/fa';
+import { useEffect } from 'react';
+import AOS from 'aos';
 import './FeatureSection.css';
 
 export default function FeatureSection(props) {
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: false });
+    }, []);
+
     return (
-        <section className="feature-section row m-5">
-            <div className={`text-container col ${props.img.right ? "left" : "right"}`}>
+        <section data-aos="fade-up" className="feature-section row my-4">
+            <div className={`text-container col-12 col-md-6 ${props.img.right ? "left" : "right"}`}>
                 <h2>{props.title}</h2>
                 <p>{props.paragraph}</p>
 
@@ -19,9 +25,10 @@ export default function FeatureSection(props) {
                 }
             </div>            
 
-            <div className={`img-container col ${props.img.right ? "right" : "left"}`}>
+            <div className={`img-container col-12 col-md-6 ${props.img.right ? "right" : "left"}`} data-aos="fade-up" data-aos-delay="100">
                 <img src={props.img.src} alt={props.img.alt} className="img-fluid shadow-sm" />
             </div>
         </section>
     )
 }
+

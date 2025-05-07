@@ -19,7 +19,7 @@ export default function UpcomingEvents(props) {
         
         <div className="row g-4">
           {props.events.map((event, index) => (
-            <div key={index} className="col-md-4" data-aos="zoom-in">
+            <div key={index} className="col-md-4" data-aos="fade-up" data-aos-delay={(index + 1) * 100}>
               <EventCard {...event} />
             </div>
           ))}

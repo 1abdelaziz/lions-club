@@ -1,11 +1,17 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { useEffect } from 'react';
+import AOS from 'aos';
 import logo from '../../assets/images/logo.png';
 import './Footer.css';
 
 export default function Footer() {
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: false });
+    }, []);
+
     return (
-        <footer className="bg-dark text-white pt-5 pb-3">
+        <footer className="bg-dark text-white pt-5 pb-3" data-aos="fade-up">
             <div className="container">
                 <div className="row g-5">
                     {/* Lions Club Section */}

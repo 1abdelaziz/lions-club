@@ -10,7 +10,7 @@ export default function EventCard(props) {
     }, []);
 
     return (
-        <div className="event-card-container card shadow-sm h-100" data-aos="fade-up">
+        <div className="event-card-container card h-100" data-aos="fade-up">
             <img src={props.img.src} alt={props.img.alt} className="card-img-top object-fit-cover" style={{height: "200px"}} />
             <div className="card-body d-flex flex-column">
                 <h3 className="card-title">{props.title}</h3>

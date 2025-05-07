@@ -1,0 +1,17 @@
+.team-members h2,
+.member-card h3 {
+    color: var(--bs-primary);
+    font-weight: bold;
+}
+
+.member-card img { 
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--bs-warning);
+}
+
+.member-card .card-footer svg {
+    font-size: 20px;
+}
