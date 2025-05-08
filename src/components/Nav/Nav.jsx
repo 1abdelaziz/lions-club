@@ -27,8 +27,8 @@ export default function Nav(props) {
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                         <NavLink href="/" text="Accueil" scrolled={props.scrolled} />
                         <NavLink href="/about" text="À propos" scrolled={props.scrolled} />
-                        <NavLink href="#events" text="Événements" scrolled={props.scrolled} />
-                        <NavLink href="#contact" text="Contact" scrolled={props.scrolled} />
+                        <NavLink href="/events" text="Événements" scrolled={props.scrolled} />
+                        <NavLink href="/contact" text="Contact" scrolled={props.scrolled} />
                     </ul>
                     <a href="#join" className="btn btn-warning fw-bold px-4">
                         Rejoindre

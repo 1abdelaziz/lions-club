@@ -1,0 +1,16 @@
+.promobanner {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+.promobanner h2 {
+    color: var(--bs-primary);
+    font-weight: bold;
+}
+
+.promobanner button {
+    background-color: var(--bs-primary);
+}

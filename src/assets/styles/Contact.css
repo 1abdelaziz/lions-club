@@ -1,0 +1,145 @@
+:root {
+    --blue: var(--bs-primary);
+    --yellow: var(--bs-warning);
+    --text: #333;
+  }
+  
+  /* === HERO SECTION ===
+  .hero-section {
+    height: 100vh;
+    background: url('../../assets/images/bg-contact.png') center center / cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .hero-overlay {
+   
+    padding: 60px 20px;
+    border-radius: 10px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-section button {
+    background-color: var(--yellow);
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .hero-section button:hover {
+    background-color: #e0a800;
+  } */
+  
+  /* === Contact Section === */
+  .contact-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-left,
+  .contact-right {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-left p {
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .colored-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .colored-title .blue {
+    color: var(--blue);
+  }
+  
+  .colored-title .yellow {
+    color: var(--yellow);
+  }
+  
+  .info-item {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .icon {
+    font-size: 18px;
+    color: var(--blue);
+    margin-right: 10px;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: var(--yellow);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* === Map Section === */
+  .map-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  .map-section iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
